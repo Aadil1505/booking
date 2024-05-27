@@ -1,6 +1,11 @@
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/magicui/marquee";
 
+
+
+
+
+
 const reviews = [
   {
     name: "Jack",
@@ -80,7 +85,15 @@ const ReviewCard = ({
 
 const MarqueeDemo = () => {
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-20 md:shadow-xl">
+    <>
+    <div className="max-w-2xl text-center mx-auto py-8">
+        <div className="mt-5 max-w-2xl flex justify-center items-center">
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+          Our clients love us! 
+          </h1>
+        </div>
+      </div>
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-background py-10 md:shadow-xl">
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
@@ -94,6 +107,7 @@ const MarqueeDemo = () => {
       <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
       <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
     </div>
+    </>
   );
 };
 

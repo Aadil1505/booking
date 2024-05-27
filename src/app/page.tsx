@@ -1,10 +1,22 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Reviews from "@/components/global/Reviews";
+import Reviews from "@/components/global/reviews";
+import { motion } from "framer-motion";
 
 export default function HeroSectionImageWithReviews() {
   return (
     <>
+    <motion.div
+      initial={{ opacity: 0.0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+      delay: 0.3,
+      duration: 0.8,
+      ease: "easeInOut",
+      }}
+    >
+
       {/* Hero */}
       <div className="container py-24 lg:py-32">
         {/* Grid */}
@@ -138,6 +150,7 @@ export default function HeroSectionImageWithReviews() {
       </div>
       {/* End Hero */}
       <Reviews />
+    </motion.div>
     </>
   );
 }
