@@ -1,9 +1,8 @@
-import { CalendarCheck, Menu } from "lucide-react";
-import Link from "next/link"
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger, } from "@/components/ui/dialog"
-import Mode from "./mode-trigger"
+import { CalendarCheck, Menu } from "lucide-react";
+import Link from "next/link";
+import Mode from "./mode-trigger";
 
  export default function Navbar() {
   return (
@@ -24,9 +23,9 @@ import Mode from "./mode-trigger"
           </Link>
           <Link
             className="text-lg font-medium text-muted-foreground hover:text-foreground"
-            href="/demo"
+            href="/book"
           >
-            Demo
+            Book
           </Link>
           <Link
             className="text-lg font-medium text-muted-foreground hover:text-foreground"
@@ -65,10 +64,10 @@ import Mode from "./mode-trigger"
                     Home
                   </Link>
                   <Link
-                    href="/demo"
+                    href="/book"
                     className="text-muted-foreground hover:text-foreground"
                   >
-                    Demo
+                    Book
                   </Link>
                   <Link
                     href="/help"
