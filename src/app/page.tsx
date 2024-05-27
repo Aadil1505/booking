@@ -1,4 +1,3 @@
-import PricingSectionCards from "@/components/global/pricing";
 
 
 export default function HeroSectionCentredWithImage() {
