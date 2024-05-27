@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Reviews from "@/components/global/review-section"
 
 export default function HeroSectionImageWithReviews() {
   return (
@@ -148,6 +149,7 @@ export default function HeroSectionImageWithReviews() {
         {/* End Grid */}
       </div>
       {/* End Hero */}
+      <Reviews />
     </motion.div>
     </>
   );
