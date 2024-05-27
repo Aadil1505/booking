@@ -1,7 +1,6 @@
 "use client"
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Reviews from "@/components/global/reviews";
 import { motion } from "framer-motion";
 
 export default function HeroSectionImageWithReviews() {
@@ -149,7 +148,6 @@ export default function HeroSectionImageWithReviews() {
         {/* End Grid */}
       </div>
       {/* End Hero */}
-      <Reviews />
     </motion.div>
     </>
   );
