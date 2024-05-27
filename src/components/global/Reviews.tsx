@@ -16,7 +16,7 @@ const reviews = [
   {
     name: "Jill",
     username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
+    body: "I don't know what to say. I'm speechless. This is so amazing.",
     img: "https://avatar.vercel.sh/jill",
   },
   {
