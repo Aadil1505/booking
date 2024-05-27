@@ -1,3 +1,4 @@
+import PricingSectionCards from "@/components/global/pricing";
 
 
 export default function HeroSectionCentredWithImage() {
@@ -30,6 +31,7 @@ export default function HeroSectionCentredWithImage() {
         </div>
       </div>
       {/* End Hero */}
+      <PricingSectionCards />
     </>
   );
 }

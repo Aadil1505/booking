@@ -1,4 +1,4 @@
-import { AArrowUp, Menu } from "lucide-react";
+import { CalendarCheck, Menu } from "lucide-react";
 import Link from "next/link"
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -10,37 +10,34 @@ import Mode from "./mode-trigger"
     <div className="flex items-center justify-around h-16 px-4 bg-background shadow-sm">
       <div>
         <Link className="flex items-center" href="/">
-          <AArrowUp className="w-10 h-10 text-black dark:text-white" />
+          <CalendarCheck className="w-9 h-9 text-black dark:text-white" />
           {/* <span className="ml-2 text-2xl font-semibold text-black dark:text-white">Aadil&apos;s Portfolio</span> */}
         </Link>
       </div>
       <div>
         <nav className="lg:flex hidden space-x-4">
           <Link
-            className="text-lg font-medium text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
-            href="#"
+            className="text-lg font-medium text-muted-foreground hover:text-foreground"
+            href="/"
           >
             Home
           </Link>
           <Link
-            className="text-lg font-medium text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
-            href="#"
+            className="text-lg font-medium text-muted-foreground hover:text-foreground"
+            href="/demo"
           >
-            About
+            Demo
           </Link>
           <Link
-            className="text-lg font-medium text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
-            href="#"
+            className="text-lg font-medium text-muted-foreground hover:text-foreground"
+            href="/help"
           >
-            Projects
+            Help
           </Link>
         </nav>
       </div>
       <div>
         <div className="lg:flex hidden items-center space-x-4">
-
-          
-
           <Mode />
         </div>
         <div className="lg:hidden flex items-center">
@@ -61,23 +58,17 @@ import Mode from "./mode-trigger"
                     href="/"
                     className="flex items-center gap-2 text-lg font-semibold"
                   >
-                    <AArrowUp className="h-6 w-6" />
+                    <CalendarCheck className="h-6 w-6" />
                     <span className="sr-only">Aadil&apos;s Portfolio</span>
                   </Link>
                   <Link href="/" className="hover:text-foreground">
                     Home
                   </Link>
                   <Link
-                    href="/categories"
+                    href="/demo"
                     className="text-muted-foreground hover:text-foreground"
                   >
-                    About
-                  </Link>
-                  <Link
-                    href="/quickpick"
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    Projects
+                    Demo
                   </Link>
                   <Link
                     href="/help"
@@ -85,6 +76,7 @@ import Mode from "./mode-trigger"
                   >
                     Help
                   </Link>
+                  <Mode />
                 </nav>
               </SheetContent>
             </Sheet>
