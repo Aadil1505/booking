@@ -31,7 +31,6 @@ export default function HeroSectionCentredWithImage() {
         </div>
       </div>
       {/* End Hero */}
-      <PricingSectionCards />
     </>
   );
 }
