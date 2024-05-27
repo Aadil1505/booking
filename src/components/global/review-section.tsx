@@ -80,13 +80,13 @@ const ReviewCard = ({
 
 const MarqueeDemo = () => {
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-20 md:shadow-xl">
-      <div className="max-w-2xl text-center mx-auto py-8">
-            <div className="mt-5 max-w-2xl flex justify-center items-center">
-                <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-                Client Reviews
-                </h1>
-            </div>
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-10 ">
+      <div className="max-w-2xl text-center mx-auto pb-8">
+          <div className="mt-5 max-w-2xl flex justify-center items-center">
+              <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+                Client Reviews & Pictures
+              </h1>
+          </div>
       </div>
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
