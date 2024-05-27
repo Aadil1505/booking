@@ -83,7 +83,7 @@ const ReviewCard = ({
   );
 };
 
-const MarqueeDemo = () => {
+export default function MarqueeDemo() {
   return (
     <>
     <div className="max-w-2xl text-center mx-auto py-8">
@@ -111,4 +111,4 @@ const MarqueeDemo = () => {
   );
 };
 
-export default MarqueeDemo;
+
