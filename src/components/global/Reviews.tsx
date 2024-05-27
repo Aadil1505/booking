@@ -83,7 +83,7 @@ const ReviewCard = ({
   );
 };
 
-export default function MarqueeDemo() {
+export default function Reviews() {
   return (
     <>
     <div className="max-w-2xl text-center mx-auto py-8">
