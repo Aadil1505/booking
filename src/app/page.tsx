@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Reviews from "@/components/global/Reviews";
 
 export default function HeroSectionImageWithReviews() {
   return (
@@ -17,10 +18,7 @@ export default function HeroSectionImageWithReviews() {
             </p>
             {/* Buttons */}
             <div className="mt-7 grid gap-3 w-full sm:inline-flex">
-              <Button size={"lg"}>Get started</Button>
-              <Button variant={"outline"} size={"lg"}>
-                Contact sales team
-              </Button>
+              <Button size={"lg"}>Book now</Button>
             </div>
             {/* End Buttons */}
             <div className="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5">
@@ -139,6 +137,7 @@ export default function HeroSectionImageWithReviews() {
         {/* End Grid */}
       </div>
       {/* End Hero */}
+      <Reviews />
     </>
   );
 }
