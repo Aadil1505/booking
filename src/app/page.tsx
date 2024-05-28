@@ -1,9 +1,12 @@
 "use client"
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import Reviews from "@/components/global/review-section"
 import Images from "@/components/global/image-section"
+import { BookOpenIcon, ChevronRightIcon, MessagesSquareIcon, ThumbsUpIcon, } from "lucide-react";
+
 
 export default function HeroSectionImageWithReviews() {
   return (
@@ -152,6 +155,93 @@ export default function HeroSectionImageWithReviews() {
       {/* End Hero */}
       <Reviews />
       <Images />
+
+
+
+
+      {/* Icon Blocks */}
+      <div className="container py-24 lg:py-32">
+        {/* Grid */}
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="lg:w-3/4">
+            <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+              The best in class barber experience
+            </h2>
+            <p className="mt-3 text-muted-foreground">
+              We help you look the best so you can live life with confidence.
+            </p>
+            <p className="mt-5">
+              <Link
+                className="inline-flex items-center gap-x-1 group font-medium hover:underline underline-offset-4 "
+                href="/book"
+              >
+                Book your appointment now
+                <ChevronRightIcon className="flex-shrink-0 w-4 h-4 transition ease-in-out group-hover:translate-x-1" />
+              </Link>
+            </p>
+          </div>
+          {/* End Col */}
+          <div className="space-y-6 lg:space-y-10">
+            {/* Icon Block */}
+            <div className="flex">
+              {/* Icon */}
+              <span className="flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[46px] rounded-full border bg-primary text-primary-foreground">
+                <BookOpenIcon className="flex-shrink-0 w-5 h-5" />
+              </span>
+              <div className="ms-5 sm:ms-8">
+                <h3 className="text-base sm:text-lg font-semibold">
+                  Industry-leading tools
+                </h3>
+                <p className="mt-1 text-muted-foreground">
+                  We only use the best tools to make sure you look the best while
+                  also maintaining basic health protocols.
+                </p>
+              </div>
+            </div>
+            {/* End Icon Block */}
+            {/* Icon Block */}
+            <div className="flex">
+              {/* Icon */}
+              <span className="flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[46px] rounded-full border  bg-primary text-primary-foreground">
+                <MessagesSquareIcon className="flex-shrink-0 w-5 h-5" />
+              </span>
+              <div className="ms-5 sm:ms-8">
+                <h3 className="text-base sm:text-lg font-semibold">
+                  Speed and skill
+                </h3>
+                <p className="mt-1 text-muted-foreground">
+                  Our clients are beyond happy with the time that it takes for their 
+                  entire visit to be completed and we pride ourselves in speed!
+                </p>
+              </div>
+            </div>
+            {/* End Icon Block */}
+            {/* Icon Block */}
+            <div className="flex">
+              {/* Icon */}
+              <span className="flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[46px] rounded-full border bg-primary text-primary-foreground">
+                <ThumbsUpIcon className="flex-shrink-0 w-5 h-5" />
+              </span>
+              <div className="ms-5 sm:ms-8">
+                <h3 className="text-base sm:text-lg font-semibold">
+                  Knowledge and experience
+                </h3>
+                <p className="mt-1 text-muted-foreground">
+                  Our shop has been open for 25 years so you can be sure 
+                  you are getting the best treatment as we've seen every type of cut.
+                </p>
+              </div>
+            </div>
+            {/* End Icon Block */}
+          </div>
+          {/* End Col */}
+        </div>
+        {/* End Grid */}
+      </div>
+      {/* End Icon Blocks */}
+
+
+
     </motion.div>
     </>
   );

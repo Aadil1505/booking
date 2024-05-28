@@ -1,4 +1,5 @@
 import Navbar from "@/components/global/navbar";
+import Footer from "@/components/global/footer";
 import React, { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar/>
           {children}
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>
