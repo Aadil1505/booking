@@ -228,7 +228,7 @@ export default function HeroSectionImageWithReviews() {
                 </h3>
                 <p className="mt-1 text-muted-foreground">
                   Our shop has been open for 25 years so you can be sure 
-                  you are getting the best treatment as we've seen every type of cut.
+                  you are getting the best treatment as we&apos;ve seen every type of cut.
                 </p>
               </div>
             </div>
